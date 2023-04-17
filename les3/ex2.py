@@ -26,6 +26,7 @@ for i in range(len(distArr)):
 lowDist = 0
 for i in range(len(distArr)):
     if (distArr[i] < maxDist):
+        maxDist = distArr[i]
         lowDist = i
 
 print('Ближайшее число к числу', userNum, '- это', mainArr[lowDist])
